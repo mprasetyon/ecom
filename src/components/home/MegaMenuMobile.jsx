@@ -1,9 +1,6 @@
 import React, { Component, Fragment } from "react";
 
-export class MegaMenu extends Component {
-  // membuat mega menu
-
-  // 2. buat konstrctor
+class MegaMenuMobile extends Component {
   constructor() {
     super();
     this.MegaMenu = this.MegaMenu.bind(this);
@@ -13,9 +10,8 @@ export class MegaMenu extends Component {
     this.MegaMenu();
   }
 
-  // 1. buat method mega menu
   MegaMenu() {
-    var acc = document.getElementsByClassName("accordion");
+    var acc = document.getElementsByClassName("accordionMobile");
     var accNum = acc.length;
     var i;
     for (i = 0; i < accNum; i++) {
@@ -33,347 +29,385 @@ export class MegaMenu extends Component {
 
   render() {
     return (
-      <div className="accordionMenuDiv">
-        <div className="accordionMenuDivInside">
-          <button className="accordion">
+      <div className="accordionMenuDivMobile">
+        <div className="accordionMenuDivInsideMobile">
+          <button className="accordionMobile">
             <img
-              className="accordionMenuIcon"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              className="accordionMenuIconMobile"
+              src="https://image.flaticon.com/icons/png/128/739/739249.png"
             />
             &nbsp; Men's Clothing
           </button>
-          <div className="panel">
+          <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
               </li>
             </ul>
           </div>
-          <button className="accordion">
+
+          <button className="accordionMobile">
             <img
-              className="accordionMenuIcon"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              className="accordionMenuIconMobile"
+              src="https://image.flaticon.com/icons/png/128/739/739249.png"
             />
             &nbsp; Men's Clothing
           </button>
-          <div className="panel">
+          <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
               </li>
             </ul>
           </div>
-          <button className="accordion">
+
+          <button className="accordionMobile">
             <img
-              className="accordionMenuIcon"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              className="accordionMenuIconMobile"
+              src="https://image.flaticon.com/icons/png/128/739/739249.png"
             />
             &nbsp; Men's Clothing
           </button>
-          <div className="panel">
+          <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
               </li>
             </ul>
           </div>
-          <button className="accordion">
+
+          <button className="accordionMobile">
             <img
-              className="accordionMenuIcon"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              className="accordionMenuIconMobile"
+              src="https://image.flaticon.com/icons/png/128/739/739249.png"
             />
             &nbsp; Men's Clothing
           </button>
-          <div className="panel">
+          <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
               </li>
             </ul>
           </div>
-          <button className="accordion">
+
+          <button className="accordionMobile">
             <img
-              className="accordionMenuIcon"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              className="accordionMenuIconMobile"
+              src="https://image.flaticon.com/icons/png/128/739/739249.png"
             />
             &nbsp; Men's Clothing
           </button>
-          <div className="panel">
+          <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
               </li>
             </ul>
           </div>
-          <button className="accordion">
+
+          <button className="accordionMobile">
             <img
-              className="accordionMenuIcon"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              className="accordionMenuIconMobile"
+              src="https://image.flaticon.com/icons/png/128/739/739249.png"
             />
             &nbsp; Men's Clothing
           </button>
-          <div className="panel">
+          <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
               </li>
             </ul>
           </div>
-          <button className="accordion">
+
+          <button className="accordionMobile">
             <img
-              className="accordionMenuIcon"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              className="accordionMenuIconMobile"
+              src="https://image.flaticon.com/icons/png/128/739/739249.png"
             />
             &nbsp; Men's Clothing
           </button>
-          <div className="panel">
+          <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
               </li>
             </ul>
           </div>
-          <button className="accordion">
+
+          <button className="accordionMobile">
             <img
-              className="accordionMenuIcon"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              className="accordionMenuIconMobile"
+              src="https://image.flaticon.com/icons/png/128/739/739249.png"
             />
             &nbsp; Men's Clothing
           </button>
-          <div className="panel">
+          <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
               </li>
             </ul>
           </div>
-          <button className="accordion">
+
+          <button className="accordionMobile">
             <img
-              className="accordionMenuIcon"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              className="accordionMenuIconMobile"
+              src="https://image.flaticon.com/icons/png/128/739/739249.png"
             />
             &nbsp; Men's Clothing
           </button>
-          <div className="panel">
+          <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
               </li>
             </ul>
           </div>
-          <button className="accordion">
+
+          <button className="accordionMobile">
             <img
-              className="accordionMenuIcon"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              className="accordionMenuIconMobile"
+              src="https://image.flaticon.com/icons/png/128/739/739249.png"
             />
             &nbsp; Men's Clothing
           </button>
-          <div className="panel">
+          <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
               </li>
             </ul>
           </div>
-          <button className="accordion">
+
+          <button className="accordionMobile">
             <img
-              className="accordionMenuIcon"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              className="accordionMenuIconMobile"
+              src="https://image.flaticon.com/icons/png/128/739/739249.png"
             />
             &nbsp; Men's Clothing
           </button>
-          <div className="panel">
+          <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
               </li>
             </ul>
           </div>
-          <button className="accordion">
+
+          <button className="accordionMobile">
             <img
-              className="accordionMenuIcon"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              className="accordionMenuIconMobile"
+              src="https://image.flaticon.com/icons/png/128/739/739249.png"
             />
             &nbsp; Men's Clothing
           </button>
-          <div className="panel">
+          <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
               </li>
             </ul>
           </div>
-          <button className="accordion">
+
+          <button className="accordionMobile">
             <img
-              className="accordionMenuIcon"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              className="accordionMenuIconMobile"
+              src="https://image.flaticon.com/icons/png/128/739/739249.png"
             />
             &nbsp; Men's Clothing
           </button>
-          <div className="panel">
+          <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
               </li>
             </ul>
           </div>
-          <button className="accordion">
+
+          <button className="accordionMobile">
             <img
-              className="accordionMenuIcon"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              className="accordionMenuIconMobile"
+              src="https://image.flaticon.com/icons/png/128/739/739249.png"
             />
             &nbsp; Men's Clothing
           </button>
-          <div className="panel">
+          <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
               </li>
             </ul>
           </div>
-          <button className="accordion">
+
+          <button className="accordionMobile">
             <img
-              className="accordionMenuIcon"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              className="accordionMenuIconMobile"
+              src="https://image.flaticon.com/icons/png/128/739/739249.png"
             />
             &nbsp; Men's Clothing
           </button>
-          <div className="panel">
+          <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItem">
+                <a href="#" className="accordionItemMobile">
+                  {" "}
+                  Mans Tshirt 2
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <button className="accordionMobile">
+            <img
+              className="accordionMenuIconMobile"
+              src="https://image.flaticon.com/icons/png/128/739/739249.png"
+            />
+            &nbsp; Men's Clothing
+          </button>
+          <div className="panelMobile">
+            <ul>
+              <li>
+                <a href="#" className="accordionItemMobile">
+                  {" "}
+                  Mans Tshirt 1
+                </a>
+              </li>
+              <li>
+                <a href="#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
@@ -386,4 +420,4 @@ export class MegaMenu extends Component {
   }
 }
 
-export default MegaMenu;
+export default MegaMenuMobile;
