@@ -34,7 +34,7 @@ class MegaMenuAll extends Component {
           <button className="accordionAll">
             <img
               className="accordionMenuIconAll"
-              src="https://image.flaticon.com/icons/png/128/739/739249.png"
+              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
             />
             &nbsp; Men's Clothing
           </button>
@@ -58,7 +58,7 @@ class MegaMenuAll extends Component {
           <button className="accordionAll">
             <img
               className="accordionMenuIconAll"
-              src="https://image.flaticon.com/icons/png/128/739/739249.png"
+              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
             />
             &nbsp; Men's Clothing
           </button>
@@ -82,7 +82,7 @@ class MegaMenuAll extends Component {
           <button className="accordionAll">
             <img
               className="accordionMenuIconAll"
-              src="https://image.flaticon.com/icons/png/128/739/739249.png"
+              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
             />
             &nbsp; Men's Clothing
           </button>
@@ -106,7 +106,7 @@ class MegaMenuAll extends Component {
           <button className="accordionAll">
             <img
               className="accordionMenuIconAll"
-              src="https://image.flaticon.com/icons/png/128/739/739249.png"
+              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
             />
             &nbsp; Men's Clothing
           </button>
@@ -130,7 +130,7 @@ class MegaMenuAll extends Component {
           <button className="accordionAll">
             <img
               className="accordionMenuIconAll"
-              src="https://image.flaticon.com/icons/png/128/739/739249.png"
+              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
             />
             &nbsp; Men's Clothing
           </button>
@@ -154,7 +154,7 @@ class MegaMenuAll extends Component {
           <button className="accordionAll">
             <img
               className="accordionMenuIconAll"
-              src="https://image.flaticon.com/icons/png/128/739/739249.png"
+              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
             />
             &nbsp; Men's Clothing
           </button>
@@ -178,7 +178,7 @@ class MegaMenuAll extends Component {
           <button className="accordionAll">
             <img
               className="accordionMenuIconAll"
-              src="https://image.flaticon.com/icons/png/128/739/739249.png"
+              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
             />
             &nbsp; Men's Clothing
           </button>
@@ -202,7 +202,7 @@ class MegaMenuAll extends Component {
           <button className="accordionAll">
             <img
               className="accordionMenuIconAll"
-              src="https://image.flaticon.com/icons/png/128/739/739249.png"
+              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
             />
             &nbsp; Men's Clothing
           </button>
@@ -226,7 +226,7 @@ class MegaMenuAll extends Component {
           <button className="accordionAll">
             <img
               className="accordionMenuIconAll"
-              src="https://image.flaticon.com/icons/png/128/739/739249.png"
+              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
             />
             &nbsp; Men's Clothing
           </button>
@@ -250,7 +250,7 @@ class MegaMenuAll extends Component {
           <button className="accordionAll">
             <img
               className="accordionMenuIconAll"
-              src="https://image.flaticon.com/icons/png/128/739/739249.png"
+              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
             />
             &nbsp; Men's Clothing
           </button>

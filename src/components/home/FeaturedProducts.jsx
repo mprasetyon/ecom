@@ -31,7 +31,7 @@ class FeaturedProducts extends Component {
               </Link>
             </Col>
 
-            <Col className="p-1" key={1} xl={2} lg={2} md={2} sm={4} xs={6}>
+            <Col className="p-1" key={2} xl={2} lg={2} md={2} sm={4} xs={6}>
               <Card className="image-box card">
                 <img
                   className="center"
@@ -47,7 +47,7 @@ class FeaturedProducts extends Component {
               </Card>
             </Col>
 
-            <Col className="p-1" key={1} xl={2} lg={2} md={2} sm={4} xs={6}>
+            <Col className="p-1" key={11} xl={2} lg={2} md={2} sm={4} xs={6}>
               <Card className="image-box card">
                 <img
                   className="center"
@@ -63,7 +63,7 @@ class FeaturedProducts extends Component {
               </Card>
             </Col>
 
-            <Col className="p-1" key={1} xl={2} lg={2} md={2} sm={4} xs={6}>
+            <Col className="p-1" key={12} xl={2} lg={2} md={2} sm={4} xs={6}>
               <Card className="image-box card">
                 <img
                   className="center"
@@ -79,7 +79,7 @@ class FeaturedProducts extends Component {
               </Card>
             </Col>
 
-            <Col className="p-1" key={1} xl={2} lg={2} md={2} sm={4} xs={6}>
+            <Col className="p-1" key={13} xl={2} lg={2} md={2} sm={4} xs={6}>
               <Card className="image-box card">
                 <img
                   className="center"
@@ -95,7 +95,7 @@ class FeaturedProducts extends Component {
               </Card>
             </Col>
 
-            <Col className="p-1" key={1} xl={2} lg={2} md={2} sm={4} xs={6}>
+            <Col className="p-1" key={4} xl={2} lg={2} md={2} sm={4} xs={6}>
               <Card className="image-box card">
                 <img
                   className="center"
