@@ -59,9 +59,11 @@ export class Contact extends Component {
             toast.success("Message Send Successfully");
             sendBtn.innerHTML = "Send";
             contactForm.reset();
+            window.location.reload();
           } else {
             toast.error("error");
             sendBtn.innerHTML = "Send";
+            window.location.reload();
           }
         })
         .catch(function (error) {
