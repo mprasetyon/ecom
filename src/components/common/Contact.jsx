@@ -15,21 +15,25 @@ export class Contact extends Component {
       message: "",
     };
   }
+  
   nameOnChange = (event) => {
     let name = event.target.value;
     // alert(name);
     this.setState({ name: name });
   };
+
   emailOnChange = (event) => {
     let email = event.target.value;
     // alert(email);
     this.setState({ email: email });
   };
+
   messageOnChange = (event) => {
     let message = event.target.value;
     // alert(message);
     this.setState({ message: message });
   };
+
   onFormSubmit = (event) => {
     let name = this.state.name;
     let email = this.state.email;
@@ -37,11 +41,11 @@ export class Contact extends Component {
     let sendBtn = document.getElementById("sendBtn");
     let contactForm = document.getElementById("contactForm");
 
-    if (message.length == 0) {
+    if (message.length === 0) {
       toast.error("Please write your message");
-    } else if (name.length == 0) {
+    } else if (name.length === 0) {
       toast.error("Please write down our name");
-    } else if (email.length == 0) {
+    } else if (email.length === 0) {
       toast.error("Please write down our Email");
     } else if (!validation.NameRegx.test(name)) {
       toast.error("Invaid Name");
@@ -55,7 +59,7 @@ export class Contact extends Component {
       axios
         .post(AppURL.PostContact, MyFormData)
         .then(function (response) {
-          if (response.status == 200 && response.data == 1) {
+          if (response.status === 200 && response.data === 1) {
             toast.success("Message Send Successfully");
             sendBtn.innerHTML = "Send";
             contactForm.reset();
