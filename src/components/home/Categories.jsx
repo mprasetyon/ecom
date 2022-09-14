@@ -35,7 +35,7 @@ class Categories extends Component {
         >
           <Card className="h-100 w-100 text-center">
             <Card.Body>
-              <img className="center" src={CatList.category_image} />
+              <img className="center" src={CatList.category_image} alt={CatList.category_name} />
               <h5 className="category-name">{CatList.category_name}</h5>
             </Card.Body>
           </Card>

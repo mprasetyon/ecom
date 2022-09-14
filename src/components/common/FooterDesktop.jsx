@@ -56,15 +56,15 @@ export class FooterDesktop extends Component {
             <Row className="px-0 my-5">
               <Col className="p-2" lg={3} md={3} sm={6} xs={12}>
                 <div className={this.state.loaderDiv}>
-                  <div class="ph-item">
-                    <div class="ph-col-12">
-                      <div class="ph-row">
-                        <div class="ph-col-4"></div>
-                        <div class="ph-col-8 empty"></div>
-                        <div class="ph-col-6"></div>
-                        <div class="ph-col-6 empty"></div>
-                        <div class="ph-col-12"></div>
-                        <div class="ph-col-12"></div>
+                  <div className="ph-item">
+                    <div className="ph-col-12">
+                      <div className="ph-row">
+                        <div className="ph-col-4"></div>
+                        <div className="ph-col-8 empty"></div>
+                        <div className="ph-col-6"></div>
+                        <div className="ph-col-6 empty"></div>
+                        <div className="ph-col-12"></div>
+                        <div className="ph-col-12"></div>
                       </div>
                     </div>
                   </div>
@@ -75,15 +75,15 @@ export class FooterDesktop extends Component {
                   {ReactHtmlParser(this.state.address)}
                 </div>
                 <h5 className="footer-menu-title">SOCIAL LINK</h5>
-                <a href={this.state.facbook_link} target="_blank">
+                <a href={this.state.facbook_link}>
                   <i className="fab m-1 h4 fa-facebook"></i>
                 </a>
 
-                <a href={this.state.instagram_link} target="_blank">
+                <a href={this.state.instagram_link}>
                   <i className="fab m-1 h4 fa-instagram"></i>
                 </a>
 
-                <a href={this.state.twitter_link} target="_blank">
+                <a href={this.state.twitter_link}>
                   <i className="fab m-1 h4 fa-twitter"></i>
                 </a>
               </Col>
@@ -127,11 +127,11 @@ export class FooterDesktop extends Component {
 
               <Col className="p-2" lg={3} md={3} sm={6} xs={12}>
                 <h5 className="footer-menu-title">DOWNLOAD APPS</h5>
-                <a href={this.state.android_app_link} target="_blank">
+                <a href={this.state.android_app_link}>
                   <img src={Google} alt="Google" />
                 </a>
                 <br></br>
-                <a href={this.state.ios_app_link} target="_blank">
+                <a href={this.state.ios_app_link}>
                   <img className="mt-2" src={Apple} alt="Apple" />
                 </a>
                 <br></br>
@@ -144,7 +144,7 @@ export class FooterDesktop extends Component {
           <Container fluid={true} className="text-center m-0 pt-3 pb-1 bg-dark">
             <Container>
               <Row>
-              <h6 className="text-white"> { ReactHtmlParser(this.state.copyright_text) }  </h6>
+                  {ReactHtmlParser(this.state.copyright_text)}
               </Row>
             </Container>
           </Container>

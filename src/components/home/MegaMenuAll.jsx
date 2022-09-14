@@ -39,6 +39,7 @@ class MegaMenuAll extends Component {
             <img
               className="accordionMenuIconAll"
               src={CatList.category_image}
+              alt={CatList.category_image}
             />
             &nbsp; {CatList.category_name}
           </button>
@@ -46,8 +47,8 @@ class MegaMenuAll extends Component {
             <ul>
               {CatList.subcategory_name.map((SubList, i) => {
                 return (
-                  <li>
-                    <a href="#" className="accordionItemAll">
+                  <li key={i.toString()}>
+                    <a href="/#" className="accordionItemAll">
                       {SubList.subcategory_name}{" "}
                     </a>
                   </li>

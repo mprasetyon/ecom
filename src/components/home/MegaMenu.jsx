@@ -29,7 +29,7 @@ class MegaMenu extends Component {
             <ul>
               {CatList.subcategory_name.map((SubList, i) => {
                 return (
-                  <li>
+                  <li key={i.toString()}>
                     <a href="/#" className="accordionItem" >
                       {SubList.subcategory_name}{" "}
                     </a>
