@@ -1,12 +1,7 @@
-import React, { Component, Fragment } from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider1 from "../../assets/images/slider1.jpg";
-import Slider2 from "../../assets/images/slider2.jpg";
-import Slider3 from "../../assets/images/slider3.jpg";
-
 class HomeSlider extends Component {
   render() {
     var settings = {
@@ -47,18 +42,17 @@ class HomeSlider extends Component {
       ],
     };
 
+    const SliderData = this.props.data;
+    const MyView = SliderData.map((SliderList,i)=>{
+     return  <div key={i.toString()}>
+     <img className="slider-img" src={SliderList.slider_image} alt={SliderList.slider_image}/>
+    </div>
+    })
+
     return (
       <div>
         <Slider {...settings}>
-          <div>
-            <img className="slider-img" src={Slider1} />
-          </div>
-          <div>
-            <img className="slider-img" src={Slider2} />
-          </div>
-          <div>
-            <img className="slider-img" src={Slider3} />
-          </div>
+           {MyView}
         </Slider>
       </div>
     );

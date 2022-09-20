@@ -2,12 +2,15 @@ import React, { Component, Fragment } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import AppURL from "../../api/AppURL";
 import axios from "axios";
+import CollectionLoading from "../Placeholder/CollectionLoading"
 
 class Collection extends Component {
   constructor() {
     super();
     this.state = {
       ProductData: [],
+      isLoading: "",
+      mainDiv: "d-none",
     };
   }
 
@@ -15,7 +18,11 @@ class Collection extends Component {
     axios
       .get(AppURL.ProductListByRemark("COLLECTION"))
       .then((response) => {
-        this.setState({ ProductData: response.data });
+        this.setState({
+          ProductData: response.data,
+          isLoading: "d-none",
+          mainDiv: " ",
+        });
       })
       .catch((error) => {
         console.log("Ini ada error di Collection");
@@ -26,9 +33,21 @@ class Collection extends Component {
     const MyView = CollectionList.map((CollectionList, i) => {
       if (CollectionList.special_price === "na") {
         return (
-          <Col className="p-0" xl={3} lg={3} md={3} sm={6} xs={6}>
+          <Col
+            className="p-0"
+            key={i.toString()}
+            xl={3}
+            lg={3}
+            md={3}
+            sm={6}
+            xs={6}
+          >
             <Card className="image-box card w-100">
-              <img className="center w-75" src={CollectionList.image} alt={CollectionList.title} />
+              <img
+                className="center w-75"
+                src={CollectionList.image}
+                alt={CollectionList.title}
+              />
               <Card.Body>
                 <p className="product-name-on-card">{CollectionList.title}</p>
                 <p className="product-price-on-card">
@@ -40,9 +59,21 @@ class Collection extends Component {
         );
       } else {
         return (
-          <Col className="p-0" xl={3} lg={3} md={3} sm={6} xs={6}>
+          <Col
+            className="p-0"
+            key={i.toString()}
+            xl={3}
+            lg={3}
+            md={3}
+            sm={6}
+            xs={6}
+          >
             <Card className="image-box card w-100">
-              <img className="center w-75" src={CollectionList.image} alt={CollectionList.title}/>
+              <img
+                className="center w-75"
+                src={CollectionList.image}
+                alt={CollectionList.title}
+              />
               <Card.Body>
                 <p className="product-name-on-card">{CollectionList.title}</p>
                 <p className="product-price-on-card">
@@ -61,14 +92,18 @@ class Collection extends Component {
 
     return (
       <Fragment>
-        <Container className="text-center" fluid={true}>
-          <div className="section-title text-center mb-55">
-            <h2> PRODUCT COLLECTION</h2>
-            <p>Some Of Our Exclusive Collection, You May Like</p>
-          </div>
+        <CollectionLoading isLoading={this.state.isLoading} />
 
-          <Row>{MyView}</Row>
-        </Container>
+        <div className={this.state.mainDiv}>
+          <Container className="text-center" fluid={true}>
+            <div className="section-title text-center mb-55">
+              <h2> PRODUCT COLLECTION</h2>
+              <p>Some Of Our Exclusive Collection, You May Like</p>
+            </div>
+
+            <Row>{MyView}</Row>
+          </Container>
+        </div>
       </Fragment>
     );
   }

@@ -8,15 +8,14 @@ class AppURL {
     static ProductListByRemark(Remark){
         return this.BaseURL+"/productlistbyremark/"+Remark;
    }
-
    static ProductListByCategory(category){
         return this.BaseURL+"/productlistbycategory/"+category;
    }
-
    static ProductListBySubCategory(category,subcategory){
         return this.BaseURL+"/productlistbysubcategory/"+category+"/"+subcategory;
    }
 
+   static AllSlider = this.BaseURL+"/allslider"
 }
 
 export default AppURL
