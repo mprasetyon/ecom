@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 
 class MegaMenuMobile extends Component {
   constructor() {
@@ -34,20 +34,21 @@ class MegaMenuMobile extends Component {
           <button className="accordionMobile">
             <img
               className="accordionMenuIconMobile"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              src="http://127.0.0.1:8000/storage/caticon.png"
+              alt="Mega Menu"
             />
             &nbsp; Men's Clothing
           </button>
           <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
@@ -58,20 +59,21 @@ class MegaMenuMobile extends Component {
           <button className="accordionMobile">
             <img
               className="accordionMenuIconMobile"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              src="http://127.0.0.1:8000/storage/caticon.png"
+              alt="Mega Menu"
             />
             &nbsp; Men's Clothing
           </button>
           <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
@@ -82,20 +84,21 @@ class MegaMenuMobile extends Component {
           <button className="accordionMobile">
             <img
               className="accordionMenuIconMobile"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              src="http://127.0.0.1:8000/storage/caticon.png"
+              alt="Mega Menu"
             />
             &nbsp; Men's Clothing
           </button>
           <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
@@ -106,20 +109,21 @@ class MegaMenuMobile extends Component {
           <button className="accordionMobile">
             <img
               className="accordionMenuIconMobile"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              src="http://127.0.0.1:8000/storage/caticon.png"
+              alt="Mega Menu"
             />
             &nbsp; Men's Clothing
           </button>
           <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
@@ -130,20 +134,21 @@ class MegaMenuMobile extends Component {
           <button className="accordionMobile">
             <img
               className="accordionMenuIconMobile"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              src="http://127.0.0.1:8000/storage/caticon.png"
+              alt="Mega Menu"
             />
             &nbsp; Men's Clothing
           </button>
           <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
@@ -154,20 +159,21 @@ class MegaMenuMobile extends Component {
           <button className="accordionMobile">
             <img
               className="accordionMenuIconMobile"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              src="http://127.0.0.1:8000/storage/caticon.png"
+              alt="Mega Menu"
             />
             &nbsp; Men's Clothing
           </button>
           <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
@@ -178,20 +184,21 @@ class MegaMenuMobile extends Component {
           <button className="accordionMobile">
             <img
               className="accordionMenuIconMobile"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              src="http://127.0.0.1:8000/storage/caticon.png"
+              alt="Mega Menu"
             />
             &nbsp; Men's Clothing
           </button>
           <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
@@ -202,20 +209,21 @@ class MegaMenuMobile extends Component {
           <button className="accordionMobile">
             <img
               className="accordionMenuIconMobile"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              src="http://127.0.0.1:8000/storage/caticon.png"
+              alt="Mega Menu"
             />
             &nbsp; Men's Clothing
           </button>
           <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
@@ -226,20 +234,21 @@ class MegaMenuMobile extends Component {
           <button className="accordionMobile">
             <img
               className="accordionMenuIconMobile"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              src="http://127.0.0.1:8000/storage/caticon.png"
+              alt="Mega Menu"
             />
             &nbsp; Men's Clothing
           </button>
           <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
@@ -250,20 +259,21 @@ class MegaMenuMobile extends Component {
           <button className="accordionMobile">
             <img
               className="accordionMenuIconMobile"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              src="http://127.0.0.1:8000/storage/caticon.png"
+              alt="Mega Menu"
             />
             &nbsp; Men's Clothing
           </button>
           <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
@@ -274,20 +284,21 @@ class MegaMenuMobile extends Component {
           <button className="accordionMobile">
             <img
               className="accordionMenuIconMobile"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              src="http://127.0.0.1:8000/storage/caticon.png"
+              alt="Mega Menu"
             />
             &nbsp; Men's Clothing
           </button>
           <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
@@ -298,20 +309,21 @@ class MegaMenuMobile extends Component {
           <button className="accordionMobile">
             <img
               className="accordionMenuIconMobile"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              src="http://127.0.0.1:8000/storage/caticon.png"
+              alt="Mega Menu"
             />
             &nbsp; Men's Clothing
           </button>
           <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
@@ -322,20 +334,21 @@ class MegaMenuMobile extends Component {
           <button className="accordionMobile">
             <img
               className="accordionMenuIconMobile"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              src="http://127.0.0.1:8000/storage/caticon.png"
+              alt="Mega Menu"
             />
             &nbsp; Men's Clothing
           </button>
           <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
@@ -346,20 +359,21 @@ class MegaMenuMobile extends Component {
           <button className="accordionMobile">
             <img
               className="accordionMenuIconMobile"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              src="http://127.0.0.1:8000/storage/caticon.png"
+              alt="Mega Menu"
             />
             &nbsp; Men's Clothing
           </button>
           <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
@@ -370,20 +384,21 @@ class MegaMenuMobile extends Component {
           <button className="accordionMobile">
             <img
               className="accordionMenuIconMobile"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              src="http://127.0.0.1:8000/storage/caticon.png"
+              alt="Mega Menu"
             />
             &nbsp; Men's Clothing
           </button>
           <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>
@@ -394,20 +409,21 @@ class MegaMenuMobile extends Component {
           <button className="accordionMobile">
             <img
               className="accordionMenuIconMobile"
-              src="https://cdn-icons-png.flaticon.com/128/7570/7570840.png"
+              src="http://127.0.0.1:8000/storage/caticon.png"
+              alt="Mega Menu"
             />
             &nbsp; Men's Clothing
           </button>
           <div className="panelMobile">
             <ul>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 1
                 </a>
               </li>
               <li>
-                <a href="#" className="accordionItemMobile">
+                <a href="/#" className="accordionItemMobile">
                   {" "}
                   Mans Tshirt 2
                 </a>

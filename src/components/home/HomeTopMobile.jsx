@@ -18,9 +18,7 @@ class HomeTopMobile extends Component {
       .then((response) => {
         this.setState({ SliderData: response.data });
       })
-      .catch((error) => {
-        console.log("ini error di Slider Mobile");
-      });
+      .catch((error) => {});
   }
 
   render() {

@@ -25,9 +25,7 @@ class Categories extends Component {
           mainDiv: " ",
         });
       })
-      .catch((error) => {
-        console.log("ada error di categories");
-      });
+      .catch((error) => {});
   }
 
   render() {
@@ -43,14 +41,10 @@ class Categories extends Component {
           sm={6}
           xs={6}
         >
-          <Link to={"/productcategory/" + CatList.category_name}>
+          <Link className="text-link" to={"/productcategory/" + CatList.category_name}>
             <Card className="h-100 w-100 text-center">
               <Card.Body>
-                <img
-                  className="center"
-                  src={CatList.category_image}
-                  alt={CatList.category_name}
-                />
+                <img className="center" src={CatList.category_image} alt={i.toString()} />
                 <h5 className="category-name">{CatList.category_name}</h5>
               </Card.Body>
             </Card>

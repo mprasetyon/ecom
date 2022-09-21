@@ -23,7 +23,7 @@ class CartPage extends Component {
                </div>                       
 
                <Cart /> 
-
+               
                <div className="Desktop">
                <FooterDesktop/>
                </div>
@@ -31,7 +31,7 @@ class CartPage extends Component {
                <div className="Mobile">
                <FooterMobile/>
                </div>
-
+               
           </Fragment>
           )
      }

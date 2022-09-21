@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { Container, Row, Col} from "react-bootstrap";
 import AppURL from "../../api/AppURL";
 import axios from "axios";
 import ReactHtmlParser from "react-html-parser";
@@ -28,8 +28,9 @@ class Privacy extends Component {
           });
         }
       })
-      .catch((error) => {console.log("error di privacy")});
+      .catch((error) => {});
   }
+
   render() {
     return (
       <Fragment>
@@ -43,31 +44,32 @@ class Privacy extends Component {
               xs={12}
             >
               <div className={this.state.loaderDiv}>
-                <div class="ph-item">
-                  <div class="ph-col-12">
-                    <div class="ph-row">
-                      <div class="ph-col-4"></div>
-                      <div class="ph-col-8 empty"></div>
-                      <div class="ph-col-6"></div>
-                      <div class="ph-col-6 empty"></div>
-                      <div class="ph-col-12"></div>
-                      <div class="ph-col-12"></div>
-                      <div class="ph-col-12"></div>
-                      <div class="ph-col-12"></div>
+                <div className="ph-item">
+                  <div className="ph-col-12">
+                    <div className="ph-row">
+                      <div className="ph-col-4"></div>
+                      <div className="ph-col-8 empty"></div>
+                      <div className="ph-col-6"></div>
+                      <div className="ph-col-6 empty"></div>
+                      <div className="ph-col-12"></div>
+                      <div className="ph-col-12"></div>
+                      <div className="ph-col-12"></div>
+                      <div className="ph-col-12"></div>
                     </div>
                   </div>
                 </div>
-                <div class="ph-item">
-                  <div class="ph-col-12">
-                    <div class="ph-row">
-                      <div class="ph-col-4"></div>
-                      <div class="ph-col-8 empty"></div>
-                      <div class="ph-col-6"></div>
-                      <div class="ph-col-6 empty"></div>
-                      <div class="ph-col-12"></div>
-                      <div class="ph-col-12"></div>
-                      <div class="ph-col-12"></div>
-                      <div class="ph-col-12"></div>
+
+                <div className="ph-item">
+                  <div className="ph-col-12">
+                    <div className="ph-row">
+                      <div className="ph-col-4"></div>
+                      <div className="ph-col-8 empty"></div>
+                      <div className="ph-col-6"></div>
+                      <div className="ph-col-6 empty"></div>
+                      <div className="ph-col-12"></div>
+                      <div className="ph-col-12"></div>
+                      <div className="ph-col-12"></div>
+                      <div className="ph-col-12"></div>
                     </div>
                   </div>
                 </div>

@@ -33,22 +33,14 @@ class FeaturedProducts extends Component {
     const MyView = FeaturedList.map((FeaturedList, i) => {
       if (FeaturedList.special_price === "na") {
         return (
-          <Col
-            className="p-1"
-            key={i.toString()}
-            xl={2}
-            lg={2}
-            md={2}
-            sm={4}
-            xs={6}
-          >
-            <Link to="/productdetails">
+          <Col className="p-1" key={i.toString()} xl={2} lg={2} md={2} sm={4} xs={6}>
+            <Link className="text-link" to={"/productdetails/" + FeaturedList.id}>
               <Card className="image-box card">
-                <img className="center" src={FeaturedList.image} alt="gambar" />
+                <img className="center" src={FeaturedList.image} alt={FeaturedList.title} />
                 <Card.Body>
                   <p className="product-name-on-card">{FeaturedList.title}</p>
                   <p className="product-price-on-card">
-                    Price : ${FeaturedList.price}
+                    Price : Rp. {FeaturedList.price}
                   </p>
                 </Card.Body>
               </Card>
@@ -57,26 +49,18 @@ class FeaturedProducts extends Component {
         );
       } else {
         return (
-          <Col
-            className="p-1"
-            key={i.toString()}
-            xl={2}
-            lg={2}
-            md={2}
-            sm={4}
-            xs={6}
-          >
-            <Link to="/productdetails">
+          <Col className="p-1" key={i.toString()} xl={2} lg={2} md={2} sm={4} xs={6}>
+            <Link className="text-link" to={"/productdetails/" + FeaturedList.id}>
               <Card className="image-box card">
-                <img className="center" src={FeaturedList.image} alt="gambar" />
+                <img className="center" src={FeaturedList.image} alt={FeaturedList.title}/>
                 <Card.Body>
                   <p className="product-name-on-card">{FeaturedList.title}</p>
                   <p className="product-price-on-card">
                     Price :{" "}
                     <strike className="text-secondary">
-                      Rp.{FeaturedList.price}
+                      Rp. {FeaturedList.price}
                     </strike>{" "}
-                    Rp.{FeaturedList.special_price}
+                    Rp. {FeaturedList.special_price}
                   </p>
                 </Card.Body>
               </Card>
@@ -85,18 +69,20 @@ class FeaturedProducts extends Component {
         );
       }
     });
+
     return (
       <Fragment>
-         <FeaturedLoading isLoading={this.state.isLoading} />
+        <FeaturedLoading isLoading={this.state.isLoading} />
 
-<div className={this.state.mainDiv}>
-        <Container className="text-center" fluid={true}>
-          <div className="section-title text-center mb-55">
-            <h2>FEATURED PRODUCT</h2>
-            <p>Some Of Our Exclusive Collection, You May Like</p>
-          </div>
-          <Row>{MyView}</Row>{" "}
-        </Container>
+        <div className={this.state.mainDiv}>
+          <Container className="text-center" fluid={true}>
+            <div className="section-title text-center mb-55">
+              <h2>FEATURED PRODUCT</h2>
+              <p>Some Of Our Exclusive Collection, You May Like</p>
+            </div>
+
+            <Row>{MyView}</Row>
+          </Container>
         </div>
       </Fragment>
     );

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 class HomeSlider extends Component {
   render() {
     var settings = {
@@ -43,17 +44,17 @@ class HomeSlider extends Component {
     };
 
     const SliderData = this.props.data;
-    const MyView = SliderData.map((SliderList,i)=>{
-     return  <div key={i.toString()}>
-     <img className="slider-img" src={SliderList.slider_image} alt={SliderList.slider_image}/>
-    </div>
-    })
+    const MyView = SliderData.map((SliderList, i) => {
+      return (
+        <div key={i.toString()}>
+          <img className="slider-img" src={SliderList.slider_image} alt={SliderList.slider_image} />
+        </div>
+      );
+    });
 
     return (
       <div>
-        <Slider {...settings}>
-           {MyView}
-        </Slider>
+        <Slider {...settings}>{MyView}</Slider>
       </div>
     );
   }

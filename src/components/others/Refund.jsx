@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col} from "react-bootstrap";
 import AppURL from "../../api/AppURL";
 import axios from "axios";
 import ReactHtmlParser from "react-html-parser";
@@ -19,7 +19,7 @@ class Refund extends Component {
       .get(AppURL.AllSiteInfo)
       .then((response) => {
         let StatusCode = response.status;
-        if (StatusCode == 200) {
+        if (StatusCode === 200) {
           let JsonData = response.data[0]["refund"];
           this.setState({ refund: JsonData, loaderDiv: "d-none", mainDiv: "" });
         }
@@ -40,35 +40,32 @@ class Refund extends Component {
               xs={12}
             >
               <div className={this.state.loaderDiv}>
-                <div class="ph-item">
-                  <div class="ph-col-12">
-                    <div class="ph-row">
-                      <div class="ph-col-4"></div>
-                      <div class="ph-col-8 empty"></div>
-                      <div class="ph-col-6"></div>
-                      <div class="ph-col-6 empty"></div>
-                      <div class="ph-col-12"></div>
-                      <div class="ph-col-12"></div>
-                      <div class="ph-col-12"></div>
-                      <div class="ph-col-12"></div>
+                <div className="ph-item">
+                  <div className="ph-col-12">
+                    <div className="ph-row">
+                      <div className="ph-col-4"></div>
+                      <div className="ph-col-8 empty"></div>
+                      <div className="ph-col-6"></div>
+                      <div className="ph-col-6 empty"></div>
+                      <div className="ph-col-12"></div>
+                      <div className="ph-col-12"></div>
+                      <div className="ph-col-12"></div>
+                      <div className="ph-col-12"></div>
                     </div>
                   </div>
                 </div>
-                Each course has been hand-tailored to teach a specific skill. I
-                hope you agree! Whether you’re trying to learn a new skill from
-                scratch or want to refresh your memory on something you’ve
-                learned in the past, you’ve come to the right place.<br></br>
-                <div class="ph-item">
-                  <div class="ph-col-12">
-                    <div class="ph-row">
-                      <div class="ph-col-4"></div>
-                      <div class="ph-col-8 empty"></div>
-                      <div class="ph-col-6"></div>
-                      <div class="ph-col-6 empty"></div>
-                      <div class="ph-col-12"></div>
-                      <div class="ph-col-12"></div>
-                      <div class="ph-col-12"></div>
-                      <div class="ph-col-12"></div>
+
+                <div className="ph-item">
+                  <div className="ph-col-12">
+                    <div className="ph-row">
+                      <div className="ph-col-4"></div>
+                      <div className="ph-col-8 empty"></div>
+                      <div className="ph-col-6"></div>
+                      <div className="ph-col-6 empty"></div>
+                      <div className="ph-col-12"></div>
+                      <div className="ph-col-12"></div>
+                      <div className="ph-col-12"></div>
+                      <div className="ph-col-12"></div>
                     </div>
                   </div>
                 </div>

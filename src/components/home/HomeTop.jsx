@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import HomeSlider from "./HomeSlider";
 import MegaMenu from "./MegaMenu";
+import HomeSlider from "./HomeSlider";
 import AppURL from "../../api/AppURL";
 import axios from "axios";
 import SliderLoading from "../Placeholder/SliderLoading";
@@ -23,9 +23,7 @@ class HomeTop extends Component {
       .then((response) => {
         this.setState({ MenuData: response.data });
       })
-      .catch((error) => {
-        console.log("ini Error HomeTop Category");
-      });
+      .catch((error) => {});
 
     axios
       .get(AppURL.AllSlider)
@@ -36,9 +34,7 @@ class HomeTop extends Component {
           mainDiv: "",
         });
       })
-      .catch((error) => {
-        console.log("ini Error HomeTop Slider");
-      });
+      .catch((error) => {});
   }
 
   render() {

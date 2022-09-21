@@ -44,7 +44,7 @@ export class FooterDesktop extends Component {
         }
       })
       .catch((error) => {
-        console.error("Error di Footer Nih !!!");
+        console.log("Ini Error di Footer Desktop");
       });
   }
 
@@ -72,8 +72,10 @@ export class FooterDesktop extends Component {
 
                 <div className={this.state.mainDiv}>
                   <h5 className="footer-menu-title">OFFICE ADDRESS</h5>
+
                   {ReactHtmlParser(this.state.address)}
                 </div>
+
                 <h5 className="footer-menu-title">SOCIAL LINK</h5>
                 <a href={this.state.facbook_link}>
                   <i className="fab m-1 h4 fa-facebook"></i>
@@ -135,17 +137,15 @@ export class FooterDesktop extends Component {
                   <img className="mt-2" src={Apple} alt="Apple" />
                 </a>
                 <br></br>
-                <br></br>
                 Change Your Language <br></br>
                 <div id="google_translate_element"> </div>
               </Col>
             </Row>
           </Container>
+
           <Container fluid={true} className="text-center m-0 pt-3 pb-1 bg-dark">
             <Container>
-              <Row>
-                  {ReactHtmlParser(this.state.copyright_text)}
-              </Row>
+              <Row> {ReactHtmlParser(this.state.copyright_text)} </Row>
             </Container>
           </Container>
         </div>

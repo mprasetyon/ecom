@@ -23,11 +23,7 @@ class MegaMenu extends Component {
       return (
         <div key={i.toString()}>
           <button onClick={this.MenuItemClick} className="accordion">
-            <img
-              className="accordionMenuIcon"
-              src={CatList.category_image}
-              alt="Accordion"
-            />
+            <img className="accordionMenuIcon" src={CatList.category_image} alt={CatList.category_name} />
             &nbsp; {CatList.category_name}
           </button>
           <div className="panel">

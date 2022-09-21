@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import AppURL from "../../api/AppURL";
 import axios from "axios";
 import NewArrivalLoading from "../Placeholder/NewArrivalLoading";
+import { Link } from "react-router-dom";
 
 class NewArrival extends Component {
   constructor(props) {
@@ -37,37 +38,50 @@ class NewArrival extends Component {
       })
       .catch((error) => {});
   }
+
   render() {
     const NewList = this.state.ProductData;
     const MyView = NewList.map((NewList, i) => {
       if (NewList.special_price === "na") {
         return (
           <div key={i.toString()}>
-            <Card className="image-box card">
-              <img className="center" src={NewList.image} alt={NewList.title} />
-              <Card.Body>
-                <p className="product-name-on-card">{NewList.title}</p>
-                <p className="product-price-on-card">
-                  Price : ${NewList.price}
-                </p>
-              </Card.Body>
-            </Card>
+            <Link className="text-link" to={"/productdetails/" + NewList.id}>
+              <Card className="image-box card">
+                <img
+                  className="center"
+                  src={NewList.image}
+                  alt={NewList.title}
+                />
+                <Card.Body>
+                  <p className="product-name-on-card">{NewList.title}</p>
+                  <p className="product-price-on-card">
+                    Price : Rp. {NewList.price}
+                  </p>
+                </Card.Body>
+              </Card>
+            </Link>
           </div>
         );
       } else {
         return (
           <div key={i.toString()}>
-            <Card className="image-box card">
-              <img className="center" src={NewList.image} alt={NewList.title} />
-              <Card.Body>
-                <p className="product-name-on-card">{NewList.title}</p>
-                <p className="product-price-on-card">
-                  Price :{" "}
-                  <strike className="text-secondary">${NewList.price}</strike> $
-                  {NewList.special_price}
-                </p>
-              </Card.Body>
-            </Card>
+            <Link className="text-link" to={"/productdetails/" + NewList.id}>
+              <Card className="image-box card">
+                <img
+                  className="center"
+                  src={NewList.image}
+                  alt={NewList.title}
+                />
+                <Card.Body>
+                  <p className="product-name-on-card">{NewList.title}</p>
+                  <p className="product-price-on-card">
+                    Price :{" "}
+                    <strike className="text-secondary">Rp. {NewList.price}</strike>{" "}
+                    Rp. {NewList.special_price}
+                  </p>
+                </Card.Body>
+              </Card>
+            </Link>
           </div>
         );
       }
@@ -75,8 +89,8 @@ class NewArrival extends Component {
 
     var settings = {
       dots: false,
-      speed: 500,
       infinite: true,
+      speed: 500,
       autoplay: true,
       autoplaySpeed: 3000,
       slidesToShow: 4,
@@ -120,16 +134,13 @@ class NewArrival extends Component {
             <div className="section-title text-center mb-55">
               <h2>
                 NEW ARRIVAL &nbsp;
-                <div
-                  className="btn btn-sm ml-2 site-btn"
-                  onClick={this.previous}
-                >
+                <a href="/#" className="btn btn-sm ml-2 site-btn" onClick={this.previous}>
                   <i className="fa fa-angle-left"></i>
-                </div>
+                </a>
                 &nbsp;
-                <div className="btn btn-sm ml-2 site-btn" onClick={this.next}>
+                <a href="/#" className="btn btn-sm ml-2 site-btn" onClick={this.next}>
                   <i className="fa fa-angle-right"></i>
-                </div>
+                </a>
               </h2>
               <p>Some Of Our Exclusive Collection, You May Like</p>
             </div>

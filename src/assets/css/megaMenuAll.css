@@ -47,24 +47,24 @@
      scrollbar-width: thin;
      scrollbar-color: #e9e9e9 #ffffff;
  }
-
+ 
  .accordionMenuDivAll::-webkit-scrollbar {
      width:10px !important;
  }
-
+ 
  .accordionMenuDivAll::-webkit-scrollbar-thumb {
      background: #dedede !important;
  }
-
+ 
  .accordionMenuDivAll::-webkit-scrollbar-thumb:hover {
      background: #808080 !important;
  }
-
+ 
  .accordionMenuDivAll::-webkit-scrollbar-track {
      background: #F4F4F4!important;
  }
-
-
+ 
+ 
  .accordionMenuDivInsideAll{
      direction:ltr;
  }
