@@ -54,7 +54,7 @@ class ProductDetails extends Component {
     if (color !== "na") {
       let ColorArray = color.split(",");
       var ColorOption = ColorArray.map((ColorList, i) => {
-        return <option value={ColorList}> {ColorList} </option>;
+        return <option value={ColorList} key={i.toString()}> {ColorList} </option>;
       });
       ColorDiv = "";
     } else {
@@ -65,7 +65,7 @@ class ProductDetails extends Component {
     if (size !== "na") {
       let SizeArray = size.split(",");
       var SizeOption = SizeArray.map((SizeList, i) => {
-        return <option value={SizeList}> {SizeList} </option>;
+        return <option value={SizeList} key={i.toString()}> {SizeList} </option>;
       });
       SizeDiv = "";
     } else {
