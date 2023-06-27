@@ -1,9 +1,10 @@
 import React, { Component, Fragment } from "react";
-import { Container, Row, Col} from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import ReactDOM from "react-dom";
+import Breadcrumb from 'react-bootstrap/Breadcrumb'
+import { Link } from 'react-router-dom'
 
 class ProductDetails extends Component {
-
   imgOnClick(event) {
     let imgSrc = event.target.getAttribute("src");
     let previewImg = document.getElementById("previewImg");
@@ -29,13 +30,13 @@ class ProductDetails extends Component {
     let brand = ProductAllData["productList"][0]["brand"];
     let category = ProductAllData["productList"][0]["category"];
     let subcategory = ProductAllData["productList"][0]["subcategory"];
-//     let image = ProductAllData["productList"][0]["image"];
+    //     let image = ProductAllData["productList"][0]["image"];
 
     let price = ProductAllData["productList"][0]["price"];
     let product_code = ProductAllData["productList"][0]["product_code"];
-//     let remark = ProductAllData["productList"][0]["remark"];
+    //     let remark = ProductAllData["productList"][0]["remark"];
     let special_price = ProductAllData["productList"][0]["special_price"];
-//     let star = ProductAllData["productList"][0]["star"];
+    //     let star = ProductAllData["productList"][0]["star"];
 
     let image_one = ProductAllData["productDetails"][0]["image_one"];
     let image_two = ProductAllData["productDetails"][0]["image_two"];
@@ -44,7 +45,7 @@ class ProductDetails extends Component {
     let color = ProductAllData["productDetails"][0]["color"];
     let size = ProductAllData["productDetails"][0]["size"];
 
-//     let product_id = ProductAllData["productDetails"][0]["product_id"];
+    let product_id = ProductAllData["productDetails"][0]["product_id"];
     let short_description =
       ProductAllData["productDetails"][0]["short_description"];
     let long_description =
@@ -54,7 +55,12 @@ class ProductDetails extends Component {
     if (color !== "na") {
       let ColorArray = color.split(",");
       var ColorOption = ColorArray.map((ColorList, i) => {
-        return <option value={ColorList} key={i.toString()}> {ColorList} </option>;
+        return (
+          <option value={ColorList} key={i.toString()}>
+            {" "}
+            {ColorList}{" "}
+          </option>
+        );
       });
       ColorDiv = "";
     } else {
@@ -65,7 +71,12 @@ class ProductDetails extends Component {
     if (size !== "na") {
       let SizeArray = size.split(",");
       var SizeOption = SizeArray.map((SizeList, i) => {
-        return <option value={SizeList} key={i.toString()}> {SizeList} </option>;
+        return (
+          <option value={SizeList} key={i.toString()}>
+            {" "}
+            {SizeList}{" "}
+          </option>
+        );
       });
       SizeDiv = "";
     } else {
@@ -81,12 +92,54 @@ class ProductDetails extends Component {
               md={12}
               lg={12}
               sm={12}
-              xs={12}
-            >
+              xs={12}>
               <Row>
                 <Col className="p-3" md={6} lg={6} sm={12} xs={12}>
-                  <img id="previewImg" className="bigimage" src={image_one} alt={image_one} />
+                  <img
+                    id="previewImg"
+                    className="bigimage"
+                    src={image_one}
+                    alt={image_one}
+                  />
                   <Container className="my-3">
+                    <div className="breadbody">
+                      <Breadcrumb>
+                        <Breadcrumb.Item>
+                          {" "}
+                          <Link to="/"> Home </Link>{" "}
+                        </Breadcrumb.Item>
+
+                        <Breadcrumb.Item>
+                          {" "}
+                          <Link to={"/productcategory/" + category}>
+                            {" "}
+                            {category}{" "}
+                          </Link>{" "}
+                        </Breadcrumb.Item>
+
+                        <Breadcrumb.Item>
+                          {" "}
+                          <Link
+                            to={
+                              "/productsubcategory/" +
+                              category +
+                              "/" +
+                              subcategory
+                            }>
+                            {" "}
+                            {subcategory}{" "}
+                          </Link>{" "}
+                        </Breadcrumb.Item>
+
+                        <Breadcrumb.Item>
+                          {" "}
+                          <Link to={"/productdetails/" + product_id}>
+                            {" "}
+                            {title}{" "}
+                          </Link>{" "}
+                        </Breadcrumb.Item>
+                      </Breadcrumb>
+                    </div>
                     <Row>
                       <Col className="p-0 m-0" md={3} lg={3} sm={3} xs={3}>
                         <img

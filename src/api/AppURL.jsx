@@ -22,7 +22,12 @@ class AppURL {
      static ProductDetails(code){
           return this.BaseURL+"/productdetails/"+code;
      }
+
+     static NotificationHistory = this.BaseURL+"/notification"
       
+     static ProductBySearch(searchkey){
+          return this.BaseURL+"/search/"+searchkey;
+     }
 }
 
 export default AppURL
