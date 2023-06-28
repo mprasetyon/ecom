@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { Router, Route, Switch } from "react-router";
+import { Route, Switch } from "react-router";
 import AboutPage from "../pages/AboutPage";
 import CartPage from "../pages/CartPage";
 import ContactPage from "../pages/ContactPage";
@@ -10,10 +10,15 @@ import PrivacyPage from "../pages/PrivacyPage";
 import ProductCategoryPage from "../pages/ProductCategoryPage";
 import ProductDetailsPage from "../pages/ProductDetailsPage";
 import ProductSubCategoryPage from "../pages/ProductSubCategoryPage";
+import ProfilePage from "../pages/ProfilePage";
 import PurchasePage from "../pages/PurchasePage";
 import RefundPage from "../pages/RefundPage";
 import UserLoginPage from "../pages/UserLoginPage";
+import ForgotPasswordPage from "../pages/ForgotPasswordPage";
+import ResetPasswordPage from "../pages/ResetPasswordPage";
+import RegisterPage from "../pages/RegisterPage";
 import SearchPage from "../pages/SearchPage";
+
 class AppRoute extends Component {
   render() {
     return (
@@ -108,7 +113,33 @@ class AppRoute extends Component {
             path="/productbysearch/:searchkey"
             render={(props) => <SearchPage {...props} key={Date.now()} />}
           />
-          
+
+          <Route
+            exact
+            path="/register"
+            render={(props) => <RegisterPage {...props} key={Date.now()} />}
+          />
+
+          <Route
+            exact
+            path="/forget"
+            render={(props) => (
+              <ForgotPasswordPage {...props} key={Date.now()} />
+            )}
+          />
+
+          <Route
+            exact
+            path="/reset/:id"
+            render={(props) => (
+              <ResetPasswordPage {...props} key={Date.now()} />
+            )}
+          />
+          <Route
+            exact
+            path="/profile"
+            render={(props) => <ProfilePage {...props} key={Date.now()} />}
+          />
         </Switch>
       </Fragment>
     );
